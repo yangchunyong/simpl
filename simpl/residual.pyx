@@ -30,7 +30,7 @@ cdef class Residual:
     property hop_size:
         def __get__(self): return self.thisptr.hop_size()
         def __set__(self, int i):
-            print 'setting hop size...'
+            print('setting hop size...')
             self.thisptr.hop_size(i)
 
     def residual_frame(self, Frame frame not None):

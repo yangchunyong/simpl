@@ -20,3 +20,8 @@ if [ ! -d "./build" ];then
 fi
 
 cd build
+cmake ..
+make
+sudo make install
+python setup.py build
+python setup.py install

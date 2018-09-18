@@ -29,7 +29,7 @@ try:
     except AttributeError:
         numpy_include = numpy.get_numpy_include()
 except ImportError:
-    print 'Error: Numpy was not found.'
+    print('Error: Numpy was not found.')
     exit(1)
 
 macros = []

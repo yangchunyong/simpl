@@ -150,7 +150,7 @@ class TestSndObjPartialTracking(object):
             (len(sndobj_frames), len(frames))
 
         for i in range(len(frames)):
-            print sndobj_frames[i]
+            print(sndobj_frames[i])
             assert len(frames[i].partials) == len(sndobj_frames[i])
 
             for p in range(len(frames[i].partials)):
